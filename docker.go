@@ -124,7 +124,7 @@ func (docker *Docker) Container(image string) *Docker {
 
 // Bridged sets the networking mode to bridged
 func (docker *Docker) Bridged() *Docker {
-	docker.Network = "BRIDGE"
+	docker.Network = "HOST"
 	return docker
 }
 
